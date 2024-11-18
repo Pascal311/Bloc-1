@@ -37,36 +37,5 @@
     <a href="mentions-legales-3.html">Mentions légales 3</a>
   </footer>
 
-  <div class="ball" id="ball"></div>
-
-  <script>
-      const ball = document.getElementById('ball');
-      let xPos = 0;
-      let yPos = 0;
-      let xSpeed = 2;
-      let ySpeed = 2;
-      const width = window.innerWidth - 50;
-      const height = window.innerHeight - 50;
-
-      function moveBall() {
-          xPos += xSpeed;
-          yPos += ySpeed;
-
-          if (xPos >= width || xPos <= 0) {
-              xSpeed = -xSpeed;
-          }
-          if (yPos >= height || yPos <= 0) {
-              ySpeed = -ySpeed;
-          }
-
-          ball.style.left = xPos + 'px';
-          ball.style.top = yPos + 'px';
-
-          requestAnimationFrame(moveBall);
-      }
-
-      moveBall();
-  </script>
-
 </body>
 </html>
